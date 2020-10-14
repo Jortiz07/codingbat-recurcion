@@ -31,6 +31,14 @@ public class CodingbatRecursion {
     return 2 + bunnyEars2(bunnies -1);
   }
 
+  public int triangle(int rows) {
+    if (rows == 0) {
+      return rows;
+    }
+    return rows + triangle(rows-1);
+  }
+
+
 
 
 }
