@@ -38,6 +38,13 @@ public class CodingbatRecursion {
     return rows + triangle(rows-1);
   }
 
+  public int sumDigits(int n) {
+    if (n >= 10) {
+      return n % 10 + sumDigits(n/10);
+    }
+    return n;
+  }
+
 
 
 
