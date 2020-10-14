@@ -20,5 +20,17 @@ public class CodingbatRecursion {
     return fibonacci(n-1) + fibonacci(n-2);
   }
 
+  public int bunnyEars2(int bunnies) {
+
+    if (bunnies == 0) {
+      return bunnies;
+    }
+    if (bunnies % 2 == 0) {
+      return 3 + bunnyEars2(bunnies-1);
+    }
+    return 2 + bunnyEars2(bunnies -1);
+  }
+
+
 
 }
