@@ -67,6 +67,14 @@ public class CodingbatRecursion {
       return 0;
   }
 
+  public int powerN(int base, int n) {
+    if (n > 0) {
+      return base * powerN(base, n-1);
+    }
+    return 1;
+  }
+
+
 
 
 
