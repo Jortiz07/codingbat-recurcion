@@ -45,6 +45,28 @@ public class CodingbatRecursion {
     return n;
   }
 
+  public int count7(int n) {
+    if (n % 10 == 7) {
+      return 1 + count7(n/10);
+    }
+    if (n >= 10) {
+      return count7(n/10);
+    }
+
+    return 0;
+  }
+
+  public int count8(int n) {
+    if (n % 10 == 8 && (n/10) % 10 == 8) {
+      return 2 + count8(n/10);
+    } else if (n % 10 == 8) {
+      return 1 + count8(n/10);
+    } else if (n >= 10) {
+      return count8(n/10);
+    } else
+      return 0;
+  }
+
 
 
 
